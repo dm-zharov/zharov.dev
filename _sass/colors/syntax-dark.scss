@@ -51,11 +51,11 @@
   }
 
   .highlight .cp {
-    color: #f4bf75;
+    color: #67b7a4;
   }
 
   .highlight .nt {
-    color: #f4bf75;
+    color: #67b7a4;
   }
 
   .highlight .o,
@@ -69,7 +69,7 @@
   }
 
   .highlight .gi {
-    color: #90a959;
+    color: #d0bf69;
   }
 
   .highlight .gd {
@@ -88,20 +88,20 @@
   .highlight .kp,
   .highlight .kr,
   .highlight .kv {
-    color: #aa759f;
-  }
+    color: #fc5fa3;
+  } /* Keyword */
 
   .highlight .kc {
-    color: #d28445;
-  }
+    color: #fc5fa3;
+  } /* Keyword.Constant */
 
   .highlight .kt {
-    color: #d28445;
-  }
+    color: #d0a8ff;
+  } /* Keyword.Type */
 
   .highlight .kd {
-    color: #d28445;
-  }
+    color: #fc5fa3;
+  } /* Keyword.Declaration */
 
   .highlight .s,
   .highlight .sb,
@@ -112,8 +112,8 @@
   .highlight .sh,
   .highlight .sx,
   .highlight .s1 {
-    color: #90a959;
-  }
+    color: #fc6a5d;
+  } /* Literal.String */
 
   .highlight .sa {
     color: #aa759f;
@@ -132,15 +132,15 @@
   }
 
   .highlight .nn {
-    color: #f4bf75;
+    color: #67b7a4;
   }
 
   .highlight .nc {
-    color: #f4bf75;
+    color: #67b7a4;
   }
 
   .highlight .no {
-    color: #f4bf75;
+    color: #67b7a4;
   }
 
   .highlight .na {
@@ -155,10 +155,10 @@
   .highlight .il,
   .highlight .mo,
   .highlight .mx {
-    color: #90a959;
+    color: #d0bf69;
   }
 
   .highlight .ss {
-    color: #90a959;
+    color: #d0bf69;
   }
 }

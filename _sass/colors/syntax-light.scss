@@ -36,13 +36,23 @@
   }
 
   .highlight .k,
-  .highlight .kd,
   .highlight .kn,
   .highlight .kp,
   .highlight .kr,
-  .highlight .kt,
   .highlight .kv {
-    color: #cf222e;
+    color: #9b2393;
+  }
+
+  .highlight .kc {
+    color: #9b2393;
+  }
+
+  .highlight .kt {
+    color: #326d74;
+  }
+
+  .highlight .kd {
+    color: #9b2393;
   }
 
   .highlight .gr {
@@ -87,10 +97,6 @@
     background-color: #dafbe1;
   }
 
-  .highlight .kc {
-    color: #0550ae;
-  }
-
   .highlight .l,
   .highlight .ld,
   .highlight .m,
@@ -124,17 +130,16 @@
     color: #0550ae;
   }
 
-  .highlight .nv,
   .highlight .vc,
   .highlight .vg,
   .highlight .vi,
   .highlight .vm {
-    color: #0550ae;
+    color: #326d74;
   }
 
   .highlight .o,
   .highlight .ow {
-    color: #0550ae;
+    color: #326d74;
   }
 
   .highlight .gh {
@@ -158,7 +163,7 @@
   .highlight .sx,
   .highlight .s1,
   .highlight .ss {
-    color: #0a3069;
+    color: #c41a16;
   }
 
   .highlight .nd {
@@ -167,7 +172,7 @@
 
   .highlight .nf,
   .highlight .fm {
-    color: #8250df;
+    color: #326d74;
   }
 
   .highlight .err {
