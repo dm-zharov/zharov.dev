@@ -9,10 +9,10 @@
   --main-border-color: #f3f3f3;
 
   /* Common color */
-  --text-color: #34343c;
-  --text-muted-color: #757575;
+  --text-color: rgb(29, 29, 31);
+  --text-muted-color: rgb(110, 110, 115);
   --text-muted-hightlight-color: inherit;
-  --heading-color: #2a2a2a;
+  --heading-color: rgb(29, 29, 31);
   --label-color: #585858;
   --blockquote-border-color: #eeeeee;
   --blockquote-text-color: #757575;
@@ -65,10 +65,8 @@
   --toc-highlight: #0550ae;
   --btn-share-color: gray;
   --btn-share-hover-color: #0d6efd;
-  --card-bg: white;
+  --card-bg: rgb(245, 245, 247);
   --card-hovor-bg: #e2e2e2;
-  --card-shadow: rgb(104, 104, 104, 0.05) 0 2px 6px 0,
-    rgba(211, 209, 209, 0.15) 0 0 0 1px;
   --footnote-target-bg: lightcyan;
   --tb-odd-bg: #fbfcfd;
   --tb-border-color: #eaeaea;
