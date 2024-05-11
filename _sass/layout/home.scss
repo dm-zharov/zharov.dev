@@ -3,7 +3,7 @@
 */
 
 #post-list {
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   .card-wrapper {
     &:hover {
@@ -33,13 +33,16 @@
 
     .card-body {
       height: 100%;
-      padding: 1rem;
+      padding: 1.25rem 1.75rem 1.25rem 1.75rem;
 
       .card-title {
         @extend %text-clip;
 
         color: var(--heading-color) !important;
         font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.16667;
+        letter-spacing: 0.009em;
       }
 
       %muted {
@@ -167,7 +170,7 @@
 }
 
 /* Sidebar is visible */
-@media all and (min-width: 831px) {
+@media all and (min-width: 850px) {
   #post-list {
     margin-top: 2.5rem;
   }
