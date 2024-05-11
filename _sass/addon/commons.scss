@@ -1229,9 +1229,6 @@ search {
   main {
     .content {
       > blockquote[class^='prompt-'] {
-        @include ml-mr(-1rem);
-
-        border-radius: 0;
         max-width: none;
       }
     }

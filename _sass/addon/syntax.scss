@@ -179,8 +179,8 @@ div {
   justify-content: space-between;
   align-items: center;
   height: $code-header-height;
-  margin-left: 0.75rem;
-  margin-right: 0.25rem;
+  margin-left: 0.5rem;
+  margin-right: 0.0rem;
 
   /* the label block */
   span {
@@ -245,41 +245,6 @@ div {
 
       i {
         color: white;
-      }
-    }
-  }
-}
-
-@media all and (min-width: 576px) {
-  div[class^='language-'] {
-    .content > & {
-      @include ml-mr(0);
-
-      border-radius: $base-radius;
-    }
-
-    .code-header {
-      @include ml-mr(0);
-
-      $dot-margin: 1rem;
-
-      &::before {
-        content: '';
-        display: inline-block;
-        margin-left: $dot-margin;
-        width: $code-dot-size;
-        height: $code-dot-size;
-        border-radius: 50%;
-        background-color: var(--code-header-muted-color);
-        box-shadow: ($code-dot-size + $code-dot-gap) 0 0
-            var(--code-header-muted-color),
-          ($code-dot-size + $code-dot-gap) * 2 0 0
-            var(--code-header-muted-color);
-      }
-
-      span {
-        // center the text of label
-        margin-left: calc(($dot-margin + $code-dot-size) / 2 * -1);
       }
     }
   }
