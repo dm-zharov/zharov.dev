@@ -149,12 +149,6 @@ div[class^='language-'] {
 
   box-shadow: var(--language-border-color) 0 0 0 1px;
 
-  .content > & {
-    @include ml-mr(-1rem);
-
-    border-radius: 0;
-  }
-
   .highlight {
     border-top-left-radius: 0;
     border-top-right-radius: 0;

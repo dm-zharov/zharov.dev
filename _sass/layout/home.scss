@@ -140,8 +140,6 @@
   #post-list {
     .card {
       .card-body {
-        padding: 1.75rem 1.75rem 1.25rem 1.75rem;
-
         .card-text {
           display: inherit !important;
         }
@@ -159,7 +157,7 @@
 }
 
 /* Hide SideBar and TOC */
-@media all and (max-width: 830px) {
+@media all and (max-width: 849px) {
   .pagination {
     .page-item {
       &:not(:first-child):not(:last-child) {
