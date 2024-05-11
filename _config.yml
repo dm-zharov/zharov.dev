@@ -19,7 +19,7 @@ title: Dmitriy Zharov # the main title
 tagline: Software Engineer who knows Swift & Objective-C and uses UIKit, AppKit, and SwiftUI # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Software Engineer who knows Swift & Objective-C and uses UIKit, AppKit, and SwiftUI
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -37,9 +37,9 @@ social:
   email: contact@zharov.dev
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/dm_zharov # change to your twitter homepage
-    - https://github.com/dm-zharov
     - https://www.linkedin.com/in/dm-zharov
+    - https://github.com/dm-zharov
+    - https://twitter.com/dm_zharov # change to your twitter homepage
 
 google_site_verification: # fill in to your verification string
 
