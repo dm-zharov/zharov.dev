@@ -33,7 +33,7 @@
 
     .card-body {
       height: 100%;
-      padding: 1.25rem 1.75rem 1.25rem 1.75rem;
+      padding: 1.0rem 1.5rem 1.0rem 1.5rem;
 
       .card-title {
         @extend %text-clip;
@@ -140,9 +140,7 @@
   #post-list {
     .card {
       .card-body {
-        .card-text {
-          display: inherit !important;
-        }
+        padding: 1.25rem 1.75rem 1.25rem 1.75rem;
 
         .post-meta {
           i {
