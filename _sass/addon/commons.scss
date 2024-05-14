@@ -396,7 +396,6 @@ main {
 }
 
 .content {
-  font-size: 1.08rem;
   margin-top: 2rem;
   overflow-wrap: break-word;
 
@@ -835,7 +834,7 @@ $btn-mb: 0.5rem;
 /* --- top-bar --- */
 
 #topbar {
-  @include mt-mb(1rem);
+  margin-top: 2rem;
 
   button i {
     color: #999999;
@@ -863,6 +862,7 @@ $btn-mb: 0.5rem;
         padding: 0;
         color: var(--link);
         font-weight: 600;
+        transition: none;
 
         &:hover {
           @extend %link-hover;
@@ -931,7 +931,7 @@ $btn-mb: 0.5rem;
 search {
   display: flex;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   border: 1px solid var(--search-border-color);
   background: var(--background);
   padding: 0 0.5rem;
@@ -1233,6 +1233,15 @@ search {
   #tags {
     justify-content: center !important;
   }
+
+  h1.dynamic-title {
+    display: none;
+
+    ~ .content {
+      margin-top: 2rem;
+    }
+  }
+
 }
 
 @media all and (min-width: 768px) {
