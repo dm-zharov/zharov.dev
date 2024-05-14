@@ -4,16 +4,14 @@
 
 /* sidebar */
 
-$sidebar-width: 320px !default; /* the basic width */
 $sb-btn-gap: 1rem !default;
 
 /* other framework sizes */
 
-$topbar-height: 3rem !default;
 $search-max-width: 200px !default;
 $footer-height: 5rem !default;
 $footer-height-large: 6rem !default; /* screen width: < 850px */
-$main-content-max-width: 1280px !default;
+$main-content-max-width: 1080px !default;
 $base-radius: 0.625rem !default;
 $back2top-size: 2.75rem !default;
 
@@ -27,5 +25,4 @@ $code-icon-width: 1.75rem !default;
 
 /* fonts */
 
-$font-family-base: system-ui, 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-$font-family-heading: system-ui, 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family: system-ui, 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;

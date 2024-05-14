@@ -63,7 +63,7 @@
       text-overflow: ellipsis;
 
       &:nth-child(odd) {
-        background-color: var(--main-bg, #ffffff);
+        background-color: var(--background, #ffffff);
         background-image: linear-gradient(
           to left,
           #ffffff,

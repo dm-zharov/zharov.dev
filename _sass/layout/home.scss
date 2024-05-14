@@ -2,8 +2,16 @@
   Style for Homepage
 */
 
+#main-wrapper {
+  .profile-wrapper {
+    border: 0;
+    color: white;
+    background: black;
+  }
+}
+
 #post-list {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 
   .card-wrapper {
     &:hover {
@@ -33,7 +41,7 @@
 
     .card-body {
       height: 100%;
-      padding: 1.0rem 1.5rem 1.0rem 1.5rem;
+      padding: 0.5rem 1rem 0.5rem 1rem;
 
       .card-title {
         @extend %text-clip;
@@ -87,7 +95,7 @@
 } /* #post-list */
 
 .pagination {
-  color: var(--text-color);
+  color: var(--text);
   font-family: Lato, sans-serif;
   justify-content: space-evenly;
 
@@ -154,7 +162,6 @@
   }
 }
 
-/* Hide SideBar and TOC */
 @media all and (max-width: 849px) {
   .pagination {
     .page-item {
@@ -165,12 +172,7 @@
   }
 }
 
-/* Sidebar is visible */
-@media all and (min-width: 850px) {
-  #post-list {
-    margin-top: 2.5rem;
-  }
-
+@media all and (min-width: 992px) {
   .pagination {
     font-size: 0.85rem;
     justify-content: center;

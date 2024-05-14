@@ -3,29 +3,76 @@
  */
 
 @mixin dark-scheme {
-  /* Framework color */
-  --main-bg: rgb(20, 20, 20);
-  --mask-bg: rgb(68, 69, 70);
+  --red: rgb(255, 69, 58);
+  --orange: rgb(255, 128, 0);
+  --yellow: rgb(255, 214, 10);
+  --green: rgb(48, 209, 88);
+  --teal: rgb(100, 210, 255);
+  --blue: rgb(10, 132, 255);
+  --indigo: rgb(94, 92, 230);
+  --purple: rgb(191, 90, 242);
+  --pink: rgb(255, 55, 95);
+  --gray: rgb(142, 142, 147);
+  --gray2: rgb(99, 99, 102);
+  --gray3: rgb(72, 72, 74);
+  --gray4: rgb(58, 58, 60);
+  --gray5: rgb(44, 44, 46);
+  --gray6: rgb(28, 28, 30);
+  --text: rgb(255, 255, 255);
+  --secondary-text: rgb(134, 134, 139);
+  --placeholder-text: rgb(235, 235, 245);
+  --link: var(--blue);
+  --separator: rgb(84, 84, 88);
+  --opaque-separator: rgb(56, 56, 58);
+  --fill: rgb(120, 120, 128);
+  --secondary-fill: rgb(120, 120, 128);
+  --background: rgb(14, 14, 15);
+  --secondary-background: rgb(28, 28, 30);
+
+  @supports (color: color(display-p3 1 1 1)) {
+    --red: color(display-p3 1 0.4118 0.3804);
+    --orange: color(display-p3 1 0.5 0);
+    --yellow: color(display-p3 1 0.8314 0.149);
+    --green: color(display-p3 0.1882 0.8588 0.3569);
+    --teal: color(display-p3 0.4392 0.8431 1);
+    --blue: color(display-p3 0.251 0.6118 1);
+    --indigo: color(display-p3 0.4902 0.4784 1);
+    --purple: color(display-p3 0.8549 0.5608 1);
+    --pink: color(display-p3 1 0.3922 0.5098);
+    --gray: color(display-p3 0.6824 0.6824 0.698);
+    --gray2: color(display-p3 0.4863 0.4863 0.502);
+    --gray3: color(display-p3 0.3294 0.3294 0.3373);
+    --gray4: color(display-p3 0.2667 0.2667 0.2745);
+    --gray5: color(display-p3 0.2118 0.2118 0.2196);
+    --gray6: color(display-p3 0.1412 0.1412 0.149);
+    --text: color(display-p3 1 1 1);
+    --placeholder-text: color(display-p3 0.9216 0.9216 0.9608);
+    --separator: color(display-p3 0.3294 0.3294 0.3451);
+    --opaque-separator: color(display-p3 0.2196 0.2196 0.2275);
+    --fill: color(display-p3 0.4706 0.4706 0.502);
+    --secondary-fill: color(display-p3 0.4706 0.4706 0.502);
+    --background: color(display-p3 0.0706 0.0706 0.075);
+    --secondary-background: color(display-p3 0.1412 0.1412 0.149);
+  }
+
   --main-border-color: rgb(44, 45, 45);
 
   /* Common color */
-  --text-color: rgb(221, 221, 221);
-  --text-muted-color: rgb(134, 134, 139);
+  --text-muted-color: var(--secondary-text);
   --text-muted-hightlight-color: #aeaeae;
   --heading-color: rgb(245, 245, 247);
-  --label-color: #a7a7a7;
+  --label-color: var(--text);
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: #868686;
-  --link-color: rgb(41, 151, 255);
   --link-underline-color: rgb(82, 108, 150);
   --button-bg: #1e1e1e;
   --btn-border-color: #2e2f31;
-  --btn-backtotop-color: var(--text-color);
+  --btn-backtotop-color: var(--text);
   --btn-backtotop-border-color: #212122;
-  --btn-box-shadow: var(--main-bg);
+  --btn-box-shadow: var(--background);
   --card-header-bg: #292929;
   --checkbox-color: rgb(118, 120, 121);
-  --checkbox-checked-color: var(--link-color);
+  --checkbox-checked-color: var(--link);
   --img-bg: radial-gradient(circle, rgb(22, 22, 24) 0%, rgb(32, 32, 32) 100%);
   --shimmer-bg: linear-gradient(
     90deg,
@@ -34,32 +81,23 @@
     rgba(255, 255, 255, 0) 100%
   );
 
-  /* Sidebar */
-  --site-title-color: #868686;
-  --site-subtitle-color: #868686;
-  --sidebar-bg: #1e1e1e;
-  --sidebar-border-color: #292929;
-  --sidebar-muted-color: #868686;
-  --sidebar-active-color: rgb(255, 255, 255, 0.95);
-  --sidebar-hover-bg: #262626;
-  --sidebar-btn-bg: #232328;
-  --sidebar-btn-color: #787878;
+  /* Avatar */
   --avatar-border-color: rgb(206, 206, 206, 0.9);
 
   /* Topbar */
   --topbar-bg: rgb(20, 20, 20);
-  --topbar-text-color: var(--text-color);
+  --topbar-text-color: var(--text);
   --search-border-color: rgb(55, 55, 55);
   --search-icon-color: rgb(100, 102, 105);
   --input-focus-border-color: rgb(112, 114, 115);
 
   /* Home page */
   --post-list-text-color: rgb(175, 176, 177);
-  --btn-patinator-text-color: var(--text-color);
+  --btn-patinator-text-color: var(--text);
   --btn-paginator-hover-color: #2e2e2e;
 
   /* Posts */
-  --toc-highlight: rgb(41, 151, 255);
+  --toc-highlight: var(--link);
   --tag-hover: rgb(43, 56, 62);
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
