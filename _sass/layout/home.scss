@@ -2,16 +2,8 @@
   Style for Homepage
 */
 
-#main-wrapper {
-  .profile-wrapper {
-    border: 0;
-    color: white;
-    background: black;
-  }
-}
-
 #post-list {
-  margin-top: 0.5rem;
+  margin-top: 2rem;
 
   .card-wrapper {
     &:hover {
@@ -19,7 +11,7 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -41,16 +33,14 @@
 
     .card-body {
       height: 100%;
-      padding: 1rem 1rem 1rem 1rem;
+      padding: 0.75rem 1rem 0.75rem 1rem;
 
       .card-title {
         @extend %text-clip;
 
-        color: var(--heading-color) !important;
+        color: var(--text) !important;
         font-size: 1.25rem;
         font-weight: 700;
-        line-height: 1.16667;
-        letter-spacing: 0.009em;
       }
 
       %muted {

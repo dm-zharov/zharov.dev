@@ -703,7 +703,7 @@ $btn-mb: 0.5rem;
 
   %sidebar-link-hover {
     &:hover {
-      color: var(--sidebar-active-color);
+      @extend %link-hover;
     }
   }
 
@@ -769,7 +769,7 @@ $btn-mb: 0.5rem;
     box-shadow: var(--sidebar-border-color) 0 0 0 1px;
 
     &:hover {
-      background-color: var(--sidebar-hover-bg);
+      @extend %link-hover;
     }
   }
 
@@ -859,20 +859,15 @@ $btn-mb: 0.5rem;
 
   ul {
     li.nav-item {
+      margin-right: 1rem;
+
       a.nav-link {
         padding: 0;
-        padding-right: 1rem;
         color: var(--link);
         font-weight: 600;
 
         &:hover {
-          background-color: var(--sidebar-hover-bg);
-        }
-
-        i {
-          font-size: 95%;
-          opacity: 0.8;
-          margin-right: 1.5rem;
+          @extend %link-hover;
         }
 
         span {
