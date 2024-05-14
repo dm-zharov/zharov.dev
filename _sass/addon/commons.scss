@@ -1058,6 +1058,8 @@ search {
 
   > .container {
     min-height: 100vh;
+
+    @include pl-pr(1rem);
   }
 }
 
@@ -1147,15 +1149,6 @@ search {
     }
   }
 }
-
-/*
-  Responsive Design:
-
- {sidebar, content, panel} >= 1200px screen width
- {sidebar, content} >= 768px screen width
- {content} <= 767px screen width
-
-*/
 
 @media all and (max-width: 576px) {
   main {
@@ -1255,7 +1248,7 @@ search {
       margin-top: 2rem;
     }
   }
-} /* max-width: 767px */
+}
 
 @media all and (min-width: 768px) {
   /* Solved jumping scrollbar */
