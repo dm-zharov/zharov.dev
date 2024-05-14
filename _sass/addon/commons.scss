@@ -23,7 +23,7 @@ html {
     }
   }
 
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 body {
@@ -167,7 +167,7 @@ i {
 .access {
   top: 2rem;
   transition: top 0.2s ease-in-out;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
 
   &:only-child {
@@ -336,7 +336,6 @@ sup {
 .post-preview {
   @extend %rounded;
 
-  border: 0;
   background: var(--card-bg);
 
   &::before {
@@ -348,7 +347,6 @@ sup {
     position: absolute;
     background-color: var(--card-hovor-bg);
     opacity: 0;
-    transition: opacity 0.3;
   }
 
   &:hover {
@@ -477,7 +475,7 @@ main {
   }
 
   ::marker {
-    color: var(--text-muted-color);
+    color: var(--secondary-text);
   }
 } /* .content */
 
@@ -492,7 +490,7 @@ main {
   border-radius: 0.5rem;
   border: 1px solid var(--btn-border-color);
   padding: 0 0.4rem;
-  color: var(--text-muted-color);
+  color: var(--secondary-text);
   line-height: 1.3rem;
 
   &:not(:last-child) {
@@ -606,7 +604,7 @@ main {
 
 /* overwrite bootstrap muted */
 .text-muted {
-  color: var(--text-muted-color) !important;
+  color: var(--secondary-text) !important;
 }
 
 /* Overwrite bootstrap tooltip */
@@ -987,7 +985,7 @@ search {
 
     &::before {
       content: '#';
-      color: var(--text-muted-color);
+      color: var(--secondary-text);
       padding-right: 0.2rem;
     }
 
@@ -1235,14 +1233,6 @@ search {
   #tags {
     justify-content: center !important;
   }
-
-  h1.dynamic-title {
-    display: none;
-
-    ~ .content {
-      margin-top: 2rem;
-    }
-  }
 }
 
 @media all and (min-width: 768px) {
@@ -1280,7 +1270,7 @@ search {
 }
 
 /* panel hidden */
-@media all and (max-width: 1199px) {
+@media all and (max-width: 991px) {
   #panel-wrapper {
     display: none;
   }
@@ -1291,10 +1281,6 @@ search {
 }
 
 @media all and (min-width: 1200px) {
-  search {
-    margin-right: 4rem;
-  }
-
   #search-input {
     transition: all 0.3s;
   }
@@ -1315,18 +1301,8 @@ search {
       right: 24.3%;
     }
   }
-
-  .content {
-    font-size: 1.03rem;
-  }
 }
 
 @media all and (min-width: 1650px) {
   $icon-gap: 1rem;
-
-  search {
-    margin-right: calc(
-      $main-content-max-width / 4 - $search-max-width - 0.75rem
-    );
-  }
 }

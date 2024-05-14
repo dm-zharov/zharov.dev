@@ -58,9 +58,7 @@
   --main-border-color: rgb(44, 45, 45);
 
   /* Common color */
-  --text-muted-color: var(--secondary-text);
   --text-muted-hightlight-color: #aeaeae;
-  --heading-color: rgb(245, 245, 247);
   --label-color: var(--text);
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: #868686;
@@ -121,8 +119,7 @@
   --prompt-danger-icon-color: #cd0202;
 
   /* tags */
-  --tag-border: rgb(59, 79, 88);
-  --tag-shadow: rgb(32, 33, 33);
+  --tag-border: var(--gray5);
   --dash-color: rgb(63, 65, 68);
   --search-tag-bg: #292828;
 
@@ -168,14 +165,7 @@
   }
 
   #archives li:nth-child(odd) {
-    background-image: linear-gradient(
-      to left,
-      rgb(26, 26, 30),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(26, 26, 30)
-    );
+    background: var(--secondary-background);
   }
 
   color-scheme: dark;

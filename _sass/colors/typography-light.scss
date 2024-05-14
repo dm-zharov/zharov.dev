@@ -58,9 +58,7 @@
   --main-border-color: #f3f3f3;
 
   /* Common color */
-  --text-muted-color: var(--secondary-text);;
   --text-muted-hightlight-color: inherit;
-  --heading-color: rgb(29, 29, 31);
   --label-color: var(--text);
   --blockquote-border-color: #eeeeee;
   --blockquote-text-color: #757575;
@@ -103,7 +101,7 @@
   --toc-highlight: var(--link);
   --btn-share-color: gray;
   --btn-share-hover-color: #0d6efd;
-  --card-bg: rgb(245, 245, 247);
+  --card-bg: rgb(243, 243, 243);
   --card-hovor-bg: #e2e2e2;
   --footnote-target-bg: lightcyan;
   --tb-odd-bg: #fbfcfd;
@@ -123,8 +121,7 @@
   --prompt-danger-icon-color: #df3c30;
 
   /* Tags */
-  --tag-border: #dee2e6;
-  --tag-shadow: var(--btn-border-color);
+  --tag-border: --tag-border: var(--gray5);
   --tag-hover: rgb(222, 226, 230);
   --search-tag-bg: #f8f9fa;
 

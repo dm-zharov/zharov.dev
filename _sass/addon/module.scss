@@ -5,7 +5,7 @@
 /* ---------- scss placeholder --------- */
 
 %heading {
-  color: var(--heading-color);
+  color: var(--text);
   font-weight: 600;
   font-family: $font-family;
 }
@@ -167,7 +167,7 @@
 }
 
 @mixin placeholder {
-  color: var(--text-muted-color) !important;
+  color: var(--secondary-text) !important;
 }
 
 @mixin placeholder-focus {

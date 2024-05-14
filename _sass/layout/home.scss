@@ -44,7 +44,7 @@
       }
 
       %muted {
-        color: var(--text-muted-color) !important;
+        color: var(--secondary-text) !important;
       }
 
       .card-text.content {
@@ -82,7 +82,7 @@
       }
     }
   }
-} /* #post-list */
+}
 
 .pagination {
   color: var(--text);
@@ -138,8 +138,6 @@
   #post-list {
     .card {
       .card-body {
-        padding: 1.25rem 1.75rem 1.25rem 1.75rem;
-
         .post-meta {
           i {
             &:not(:first-child) {
@@ -176,5 +174,5 @@
     .page-index {
       display: none;
     }
-  } /* .pagination */
+  }
 }
