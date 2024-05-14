@@ -171,7 +171,6 @@ h1 + .post-meta {
   }
 
   p {
-    font-size: 1.1rem;
     line-height: 1.5rem;
     margin-top: 0.3rem;
     white-space: normal;
@@ -182,7 +181,7 @@ h1 + .post-meta {
   .post-navigation {
     .btn,
     .btn::before {
-      transition: all 0.35s ease-in-out;
+      transition: all 0.3s;
     }
   }
 }
@@ -302,6 +301,8 @@ h1 + .post-meta {
   }
 
   .card {
+    border: 0;
+
     h4 {
       @extend %text-clip;
     }

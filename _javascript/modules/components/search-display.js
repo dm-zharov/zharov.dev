@@ -1,7 +1,6 @@
 /**
  * This script make #search-result-wrapper switch to unloaded or shown automatically.
  */
-const $btnSbTrigger = $('#sidebar-trigger');
 const $btnSearchTrigger = $('#search-trigger');
 const $btnCancel = $('#search-cancel');
 const $content = $('#main-wrapper>.container>.row');
@@ -36,7 +35,6 @@ class ScrollBlocker {
 /*--- Actions in mobile screens (Sidebar hidden) ---*/
 class MobileSearchBar {
   static on() {
-    $btnSbTrigger.addClass(C_UNLOADED);
     $topbarTitle.addClass(C_UNLOADED);
     $btnSearchTrigger.addClass(C_UNLOADED);
     $search.addClass(C_FLEX);
@@ -46,7 +44,6 @@ class MobileSearchBar {
   static off() {
     $btnCancel.removeClass(C_LOADED);
     $search.removeClass(C_FLEX);
-    $btnSbTrigger.removeClass(C_UNLOADED);
     $topbarTitle.removeClass(C_UNLOADED);
     $btnSearchTrigger.removeClass(C_UNLOADED);
   }

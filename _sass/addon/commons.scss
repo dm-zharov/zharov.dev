@@ -672,6 +672,23 @@ mjx-container {
   min-width: auto !important;
 }
 
+/* avatar */
+
+#avatar {
+  display: block;
+  overflow: hidden;
+  box-shadow: var(--avatar-border-color) 0 0 0 2px;
+  transform: translateZ(0); /* fixed the zoom in Safari */
+
+  img {
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
 /* --- sidebar layout --- */
 
 $btn-border-width: 3px;
@@ -706,23 +723,6 @@ $btn-mb: 0.5rem;
 
   a {
     @extend %sidebar-links;
-  }
-
-  #avatar {
-    display: block;
-    width: 7rem;
-    height: 7rem;
-    overflow: hidden;
-    box-shadow: var(--avatar-border-color) 0 0 0 2px;
-    transform: translateZ(0); /* fixed the zoom in Safari */
-
-    img {
-      transition: transform 0.5s;
-
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
   }
 
   .profile-wrapper {
@@ -1150,11 +1150,6 @@ search {
         max-width: none;
       }
     }
-  }
-
-  #avatar {
-    width: 5rem;
-    height: 5rem;
   }
 }
 
