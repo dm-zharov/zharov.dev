@@ -7,7 +7,7 @@
 #   icon: "fa-brands fa-x-twitter"
 
 - type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+  icon: 'fab fa-linkedin'
   url:  'https://www.linkedin.com/in/dm-zharov/' # Fill with your Linkedin homepage
 
 # - type: twitter
@@ -22,7 +22,7 @@
   noblank: true
 
 # - type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
+#   icon: 'fab fa-mastodon'
 #   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
 
 # - type: stack-overflow

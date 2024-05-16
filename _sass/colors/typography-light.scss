@@ -26,7 +26,7 @@
   --opaque-separator: rgb(198, 198, 200);
   --fill: rgb(120, 120, 128);
   --secondary-fill: rgb(120, 120, 128);
-  --background: rgb(255, 255, 255);
+  --background: rgb(255, 236, 255);
   --secondary-background: rgb(255, 255, 255);
 
   @supports (color: color(display-p3 1 1 1)) {
@@ -51,15 +51,19 @@
     --opaque-separator: color(display-p3 0.7765 0.7765 0.7843);
     --fill: color(display-p3 0.4706 0.4706 0.502);
     --secondary-fill: color(display-p3 0.4706 0.4706 0.502);
-    --background: color(display-p3 1 1 1);
+    --background: color(display-p3 0.94902 0.94902 0.968627);
     --secondary-background: color(display-p3 1 1 1);
+    --tertiary-background: color(display-p3 0.94902 0.94902 0.968627);
   }
+
+  /* Accent */
+  --sponsor: var(--link);
+  --sponsor-background: rgba(var(--sponsor), 0.5);
 
   --main-border-color: #f3f3f3;
 
   /* Common color */
   --text-muted-hightlight-color: inherit;
-  --label-color: var(--text);
   --blockquote-border-color: #eeeeee;
   --blockquote-text-color: #757575;
   --link-underline-color: #dee2e6;
@@ -86,22 +90,18 @@
   --avatar-border-color: white;
 
   /* Topbar */
-  --topbar-bg: rgb(255, 255, 255, 0.7);
-  --topbar-text-color: rgb(78, 78, 78);
-  --search-border-color: rgb(240, 240, 240);
   --search-icon-color: #c2c6cc;
   --input-focus-border-color: #b8b8b8;
 
   /* Home page */
   --post-list-text-color: dimgray;
   --btn-patinator-text-color: #555555;
-  --btn-paginator-hover-color: var(--sidebar-bg);
+  --btn-paginator-hover-color: #c2c6cc;
 
   /* Posts */
   --toc-highlight: var(--link);
   --btn-share-color: gray;
   --btn-share-hover-color: #0d6efd;
-  --card-bg: rgb(243, 243, 243);
   --card-hovor-bg: #e2e2e2;
   --footnote-target-bg: lightcyan;
   --tb-odd-bg: #fbfcfd;

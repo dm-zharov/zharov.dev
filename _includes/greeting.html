@@ -1,15 +1,6 @@
-<article class="profile-wrapper">
-	<a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
-      {%- if site.avatar != empty and site.avatar -%}
-        {%- capture avatar_url -%}
-          {% include img-url.html src=site.avatar %}
-        {%- endcapture -%}
-        <img src="{{- avatar_url -}}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
-      {%- endif -%}
-    </a>
-
-	<div class="d-flex flex-wrap mt-3 mb-1 me-3">
-      <h1>Hi, I'm Dmitriy!</h1>
+<article class="profile-wrapper d-flex flex-column mb-4">
+	<div class="d-flex flex-column mt-3 mb-1 me-3">
+      <h1>Hi, I'm Dmitriy 👋</h1>
       <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
 	</div>
 

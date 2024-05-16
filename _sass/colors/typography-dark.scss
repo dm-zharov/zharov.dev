@@ -55,11 +55,15 @@
     --secondary-background: color(display-p3 0.1412 0.1412 0.149);
   }
 
+  /* Sponsor */
+  --sponsor: rgb(248, 124, 86);
+  --sponsor-background: rgba(var(--sponsor), 0.5);
+
   --main-border-color: rgb(44, 45, 45);
 
   /* Common color */
+
   --text-muted-hightlight-color: #aeaeae;
-  --label-color: var(--text);
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: #868686;
   --link-underline-color: rgb(82, 108, 150);
@@ -83,9 +87,6 @@
   --avatar-border-color: rgb(206, 206, 206, 0.9);
 
   /* Topbar */
-  --topbar-bg: rgb(20, 20, 20);
-  --topbar-text-color: var(--text);
-  --search-border-color: rgb(55, 55, 55);
   --search-icon-color: rgb(100, 102, 105);
   --input-focus-border-color: rgb(112, 114, 115);
 
@@ -103,7 +104,6 @@
   --footnote-target-bg: rgb(63, 81, 181);
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #bfc1ca;
-  --card-bg: rgb(29, 29, 31);
   --card-hovor-bg: rgb(72, 72, 74);
   --kbd-wrap-color: #6a6a6a;
   --kbd-text-color: #d3d3d3;
@@ -144,7 +144,7 @@
   /* categories */
   .categories.card,
   .list-group-item {
-    background-color: var(--card-bg);
+    background-color: var(--secondary-background);
   }
 
   .categories {
@@ -159,7 +159,7 @@
       border-color: var(--categories-border);
 
       &:last-child {
-        border-bottom-color: var(--card-bg);
+        border-bottom-color: var(--secondary-background);
       }
     }
   }

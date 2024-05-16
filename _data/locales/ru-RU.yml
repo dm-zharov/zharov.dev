@@ -3,7 +3,7 @@
 # ----- Commons label -----
 
 layout:
-  post: Пост
+  post: Статья
   category: Категория
   tag: Тег
 
@@ -11,10 +11,15 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: Главная
+  posts: Статьи
   categories: Категории
   tags: Теги
   archives: Архив
   about: О сайте
+
+home: 
+  latest: Последнее
+  frameworks: Frameworks
 
 # the text displayed in the search bar & search results
 search:

@@ -11,10 +11,15 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: Home
+  posts: Posts
   categories: Categories
   tags: Tags
   archives: Archives
   about: About
+
+home:
+  latest: Latest
+  frameworks: Frameworks
 
 # the text displayed in the search bar & search results
 search:

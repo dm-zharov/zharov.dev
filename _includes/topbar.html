@@ -37,14 +37,12 @@
           <!-- the real tabs -->
           {% for tab in site.tabs %}
             {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
-            {% unless tab_name contains 'categories' or tab_name contains 'tags' %}
               <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
                 <a href="{{ tab.url | relative_url }}" class="nav-link">
                   {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
                   <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title }}</span>
                 </a>
               </li>
-            {% endunless %}
           {% endfor %}
         </ul>
       </nav>

@@ -1,11 +1,6 @@
 ---
 layout: default
 refactor: true
-head_includes:
-  - greeting
-  - sponsor
-tail_includes:
-  - frameworks
 ---
 
 {% include lang.html %}
@@ -132,3 +127,7 @@ tail_includes:
   {% endfor %}
 </div>
 <!-- #post-list -->
+
+{% if paginator.total_pages > 1 %}
+  {% include post-paginator.html %}
+{% endif %}

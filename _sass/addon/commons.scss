@@ -28,6 +28,7 @@ html {
 
 body {
   background: var(--background);
+  background-image: radial-gradient(ellipse 80% 80% at 50% -20%,rgb(29, 31, 39), var(--background));
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
   color: var(--text);
@@ -69,7 +70,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
 
   .blur & {
     $blur: 20px;
@@ -130,7 +131,7 @@ kbd {
 }
 
 footer {
-  background-color: var(--background);
+  background-color: none;
   height: $footer-height;
   border-top: 1px solid var(--main-border-color);
 
@@ -333,10 +334,12 @@ sup {
   }
 }
 
-.post-preview {
+.link-preview {
   @extend %rounded;
 
-  background: var(--card-bg);
+  border: 0;
+  color: var(--link);
+  background: var(--secondary-background);
 
   &::before {
     @extend %rounded;
@@ -351,6 +354,38 @@ sup {
 
   &:hover {
     &::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+.sponsor-preview {
+  @extend %rounded;
+
+  text-align: center;
+  border: 1px solid var(--sponsor);
+  color: var(--text);
+  background: none;
+
+  img {
+    width: auto;
+    height: auto;
+  }
+
+  &::before {
+    @extend %rounded;
+
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--sponsor);
+    opacity: 0.1;
+  }
+
+  &:hover {
+    &::before {
+      color: var(--text);
       opacity: 0.3;
     }
   }
@@ -726,12 +761,9 @@ $btn-mb: 0.5rem;
   }
 
   .profile-wrapper {
-    @include mt-mb(2.5rem);
+    @include mt-mb(2rem);
     @extend %clickable-transition;
-
-    padding-top: 2.5rem;
-    padding-left: 2.5rem;
-    padding-right: 1.25rem;
+  
     width: 100%;
   }
 
@@ -815,8 +847,8 @@ $btn-mb: 0.5rem;
     transition: top 0.5s ease;
   }
 
-  .post-preview {
-    transition: background-color 0.3s ease-in-out;
+  .link-preview {
+    transition: background-color 0.3s;
   }
 }
 
@@ -932,7 +964,7 @@ search {
   display: flex;
   width: 100%;
   border-radius: 0.5rem;
-  border: 1px solid var(--search-border-color);
+  border: 1px solid var(--main-border-color);
   background: var(--background);
   padding: 0 0.5rem;
 
@@ -1032,15 +1064,6 @@ search {
     }
   }
 } /* #search-results */
-
-#mask {
-  display: none;
-  position: fixed;
-  inset: 0 0 0 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
 
 /* --- basic wrappers --- */
 

@@ -20,8 +20,23 @@ layout: compress
     <div id="main-wrapper" class="d-flex justify-content-center">
       <div class="container d-flex flex-column">
         {% include topbar.html lang=lang %}
+
+        {% unless layout.head_includes == empty %}
+        <div class="row mt-4">
+          <!-- head -->
+          {% for _include in layout.head_includes %}
+            {% assign _include_path = _include | append: '.html' %}
+            {% include {{ _include_path }} lang=lang %}
+          {% endfor %}
+        </div>
+        {% endunless %}
+
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-9">
+            <h3 class="mb-4" id="related-label">
+              {{- site.data.locales[lang].home.latest -}}
+            </h3>
+
             {% if layout.refactor or layout.layout == 'default' %}
               {% include refactor-content.html content=content lang=lang %}
             {% else %}
@@ -64,8 +79,6 @@ layout: compress
         </button>
       </aside>
     </div>
-
-    <div id="mask"></div>
 
     {% if site.pwa.enabled %}
       {% include_cached notification.html lang=lang %}

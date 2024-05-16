@@ -1,0 +1,9 @@
+#  The frameworks.
+
+- name: 'SwiftSecurity'
+  description: 'Modern Swift framework for Keychain API. Supports iOS, macOS, watchOS, tvOS and visionOS'
+  url: https://github.com/dm-zharov/swift-security
+
+- name: 'HapticFeedback'
+  description: 'Backport of SensoryFeedback API. Supports iOS 14, macOS 11, watchOS 7'
+  url: https://github.com/dm-zharov/haptic-feedback
