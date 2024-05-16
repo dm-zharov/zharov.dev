@@ -35,7 +35,7 @@ h1 + .post-meta {
   @extend %text-sm;
 
   margin-top: 4rem;
-  border-bottom: 1px double var(--main-border-color);
+  border-bottom: 1px double var(--opaque-separator);
 
   .license-wrapper {
     line-height: 1.2rem;

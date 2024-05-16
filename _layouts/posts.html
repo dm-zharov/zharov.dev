@@ -43,7 +43,7 @@ refactor: true
 <div id="post-list" class="flex-grow-1">
   {% for post in posts %}
     <article class="card-wrapper">
-      <a href="{{ post.url | relative_url }}" class="link-preview card row g-0 flex-md-row-reverse">
+      <a href="{{ post.url | relative_url }}" class="post-preview card row g-0 flex-md-row-reverse">
         {% assign card_body_col = '12' %}
 
         {% if post.image %}

@@ -33,9 +33,11 @@ layout: compress
 
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-9">
+            {% if page.layout == 'home' %}
             <h3 class="mb-4" id="related-label">
               {{- site.data.locales[lang].home.latest -}}
             </h3>
+            {% endif %}
 
             {% if layout.refactor or layout.layout == 'default' %}
               {% include refactor-content.html content=content lang=lang %}

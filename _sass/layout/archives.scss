@@ -12,7 +12,7 @@
     width: $timeline-width;
     position: relative;
     float: left;
-    background-color: var(--timeline-color);
+    background-color: var(--opaque-separator);
   }
 
   .year {
@@ -45,10 +45,10 @@
       border-radius: 50%;
       width: 12px;
       height: 12px;
-      left: 21.5px;
+      left: 16px;
       border: 3px solid;
-      background-color: var(--timeline-year-dot-color);
-      border-color: var(--timeline-node-bg);
+      background-color: var(--opaque-separator);
+      border-color: var(--fill);
       box-shadow: 0 0 2px 0 #c2c6cc;
       z-index: 1;
     }
@@ -126,7 +126,7 @@
       float: left;
       top: 1.35rem;
       left: 71px;
-      background-color: var(--timeline-node-bg);
+      background-color: var(--fill);
       box-shadow: 0 0 3px 0 #c2c6cc;
       z-index: 1;
     }
