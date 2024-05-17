@@ -11,7 +11,7 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: Главная
-  posts: Статьи
+  blog: Blog
   categories: Категории
   tags: Теги
   archives: Архив
@@ -19,7 +19,7 @@ tabs:
 
 home: 
   latest: Недавно опубликовано
-  frameworks: Frameworks
+  frameworks: Библиотеки
 
 # the text displayed in the search bar & search results
 search:

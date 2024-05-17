@@ -10,4 +10,24 @@ tail_includes:
 
 {% include lang.html %}
 
+{% assign pinned = site.posts | where: 'pin', 'true' %}
+{% assign default = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
+
+{% assign posts_limit = 3 %}
+{% assign posts = '' | split: '' %}
+
+<!-- Get pinned posts -->
+
+{% for post in pinned limit: posts_limit %}
+  {% assign posts = posts | push: post %}
+{% endfor %}
+
+<!-- Get default posts -->
+
+{% assign default_limit = posts_limit | minus: pinned.size %}
+
+{% for post in default limit: default_limit %}
+  {% assign posts = posts | push: post %}
+{% endfor %}
+
 {% include post-list.html lang=lang %}

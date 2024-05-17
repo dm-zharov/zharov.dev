@@ -14,13 +14,13 @@
 {% assign js_dist = '/assets/js/dist/' %}
 
 {% if page.layout == 'home'
-  or page.layout == 'posts'
+  or page.layout == 'blog'
   or page.layout == 'post'
   or page.layout == 'page'
 %}
   {% assign urls = urls | append: ',' | append: site.data.origin[type]['lazy-polyfill'].js %}
 
-  {% unless page.layout == 'home' or page.layout == 'posts' %}
+  {% unless page.layout == 'home' or page.layout == 'blog' %}
     <!-- image lazy-loading & popup & clipboard -->
     {% assign urls = urls
       | append: ','
@@ -32,7 +32,7 @@
 {% endif %}
 
 {% if page.layout == 'home'
-  or page.layout == 'posts'
+  or page.layout == 'blog'
   or page.layout == 'post'
   or page.layout == 'archives'
   or page.layout == 'category'
@@ -64,7 +64,7 @@
 {% include jsdelivr-combine.html urls=urls %}
 
 {% case page.layout %}
-  {% when 'home', 'posts', 'categories', 'post', 'page' %}
+  {% when 'home', 'blog', 'categories', 'post', 'page' %}
     {% assign js = page.layout %}
   {% when 'archives', 'category', 'tag' %}
     {% assign js = 'misc' %}

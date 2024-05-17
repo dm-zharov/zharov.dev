@@ -28,6 +28,13 @@
 
       <nav class="flex-column flex-grow-1 w-100">
         <ul class="nav justify-content-start">
+          <!-- posts -->
+          <li class="nav-item{% if page.layout == 'blog' %}{{ " active" }}{% endif %}">
+            <a href="{{ '/blog/' | relative_url }}" class="nav-link">
+              <span>{{ site.data.locales[include.lang].tabs.blog }}</span>
+            </a>
+          </li>
+          <!-- tabs -->
           {% for tab in site.tabs %}
             {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
               <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
