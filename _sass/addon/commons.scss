@@ -748,43 +748,37 @@ mjx-container {
   }
 }
 
-/* --- sidebar layout --- */
+/* profile */
 
+$btn-size: 2rem;
 $btn-border-width: 3px;
 $btn-mb: 0.5rem;
 
-/* --- sidebar bottom --- */
+%circle-button {
+  width: $btn-size;
+  height: $btn-size;
+  margin-bottom: $btn-mb; // multi line gap
+  border-radius: 50%;
+  color: var(--text);
+  background-color: var(--secondary-background);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--btn-border-color) 0 0 0 1px;
 
-%sidebar-link-hover {
   &:hover {
     @extend %link-hover;
   }
 }
 
-.sidebar-bottom {
-  $btn-size: 1.75rem;
-
-  %button {
-    width: $btn-size;
-    height: $btn-size;
-    margin-bottom: $btn-mb; // multi line gap
-    border-radius: 50%;
-    color: var(--sidebar-btn-color);
-    background-color: var(--sidebar-btn-bg);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--sidebar-border-color) 0 0 0 1px;
-
-    &:hover {
-      @extend %link-hover;
-    }
-  }
-
+.social-wrapper {
   a {
-    @extend %button;
-    @extend %sidebar-link-hover;
+    @extend %circle-button;
+    
+    &:hover {
+      text-decoration-line: none;
+    }
 
     &:not(:last-child) {
       margin-right: $sb-btn-gap;
@@ -794,33 +788,9 @@ $btn-mb: 0.5rem;
   i {
     line-height: $btn-size;
   }
-
-  .mode-toggle {
-    padding: 0;
-    border: 0;
-
-    @extend %button;
-    @extend %sidebar-links;
-    @extend %sidebar-link-hover;
-  }
-
-  .icon-border {
-    @extend %no-cursor;
-    @include ml-mr(calc(($sb-btn-gap - $btn-border-width) / 2));
-
-    background-color: var(--sidebar-btn-color);
-    content: '';
-    width: $btn-border-width;
-    height: $btn-border-width;
-    border-radius: 50%;
-  }
 }
 
 @media (hover: hover) {
-  #sidebar ul > li:last-child::after {
-    transition: top 0.5s ease;
-  }
-
   .sponsor-preview {
     transition: background-color 0.3s;
   }
@@ -861,7 +831,9 @@ $btn-mb: 0.5rem;
     letter-spacing: 0.25px;
 
     a {
-      @extend %sidebar-link-hover;
+      &:hover {
+        @extend %link-hover;
+      }
 
       color: var(--site-title-color);
     }
@@ -947,7 +919,6 @@ search {
   width: 100%;
   border-radius: 1rem;
   border: 1px solid var(--opaque-separator);
-  background: var(--background);
   padding: 0 0.5rem;
 
   i {

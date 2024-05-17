@@ -21,18 +21,22 @@ layout: compress
       <div class="container d-flex flex-column px-md-4">
         {% include topbar.html lang=lang %}
 
-        {% unless layout.head_includes == empty %}
-        <div class="row flex-grow-1 mt-4">
+        <div class="row mt-4">
           <!-- head -->
           {% for _include in layout.head_includes %}
             {% assign _include_path = _include | append: '.html' %}
             {% include {{ _include_path }} lang=lang %}
           {% endfor %}
         </div>
-        {% endunless %}
 
         <div class="row flex-grow-1">
-          <main aria-label="Main Content" class="col-12 col-lg-9">
+          {% assign main_body_col = '12' %}
+
+          {% if layout.panel_includes %}
+            {% assign main_body_col = '9' %}
+          {% endif %}
+
+          <main aria-label="Main Content" class="col-{{ main_body_col }}">
             {% if layout.refactor or layout.layout == 'default' %}
               {% include refactor-content.html content=content lang=lang %}
             {% else %}
@@ -58,7 +62,7 @@ layout: compress
 
         <div class="row">
           <!-- tail -->
-          <div id="tail-wrapper" class="col-12 col-lg-9">
+          <div id="tail-wrapper" class="col-12">
             {% for _include in layout.tail_includes %}
               {% assign _include_path = _include | append: '.html' %}
               {% include {{ _include_path }} lang=lang %}

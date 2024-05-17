@@ -1,10 +1,10 @@
-<article class="profile-wrapper col-12 col-lg-4 mb-4">
-	<div class="d-flex flex-column mb-2 me-3">
+<article class="profile-wrapper col-12 col-lg-6 mb-4">
+	<div class="d-flex flex-column mb-4">
       <h1>Hi, I'm Dmitriy 👋</h1>
-      <p class="mb-0">{{ site.tagline }}</p>
+      <p class="text-muted mb-0">{{ site.tagline }}</p>
 	</div>
 
-	<div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
+	<div class="social-wrapper d-flex flex-wrap align-items-center w-100">
       {% for entry in site.data.contact %}
         {% case entry.type %}
           {% when 'github', 'twitter' %}
