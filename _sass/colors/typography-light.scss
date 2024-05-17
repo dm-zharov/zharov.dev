@@ -27,7 +27,7 @@
   --opaque-separator: rgb(198, 198, 200);
   --fill: rgb(120, 120, 128);
   --secondary-fill: rgb(120, 120, 128);
-  --background: rgb(255, 236, 255);
+  --background: rgb(247, 247, 247);
   --secondary-background: rgb(255, 255, 255);
 
   @supports (color: color(display-p3 1 1 1)) {
@@ -58,7 +58,7 @@
   }
 
   /* Background */
-  --background-image: radial-gradient(ellipse 80% 80% at 50% -20%,var(--secondary-background), var(--background));
+  --background-image: var(--background);
 
   /* Accent */
   --sponsor: rgb(248, 124, 86);
