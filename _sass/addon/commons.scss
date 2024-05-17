@@ -420,7 +420,6 @@ main {
   line-height: 1.75;
 
   h1 {
-    margin-top: 2rem;
     margin-bottom: 1.5rem;
   }
 
@@ -456,7 +455,6 @@ main {
 }
 
 .content {
-  margin-top: 2rem;
   overflow-wrap: break-word;
 
   a {
@@ -900,7 +898,7 @@ $btn-mb: 0.5rem;
 /* --- top-bar --- */
 
 #topbar {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 
   button i {
     color: #999999;
@@ -1281,15 +1279,6 @@ search {
   #search-result-wrapper .content {
     letter-spacing: 0;
   }
-
-  h1.dynamic-title {
-    display: none;
-
-    ~ .content {
-      margin-top: 2rem;
-    }
-  }
-
 }
 
 @media all and (min-width: 768px) {

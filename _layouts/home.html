@@ -30,4 +30,10 @@ tail_includes:
   {% assign posts = posts | push: post %}
 {% endfor %}
 
+<div id="related-posts">
+  <h3 class="mb-4" id="related-label">
+    {{- site.data.locales[lang].home.latest -}}
+  </h3>
+</div>
+
 {% include post-list.html lang=lang %}

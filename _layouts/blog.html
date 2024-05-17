@@ -40,6 +40,14 @@ refactor: true
   {% endfor %}
 {% endif %}
 
+<h1 class="dynamic-title">
+  {{- site.data.locales[lang].tabs.blog -}}
+</h1>
+
+<p class="mb-4">
+  Frequently published articles about Swift techniques, language features, architectual patterns, and beyond.
+</p>
+
 {% include post-list.html lang=lang %}
 
 {% if paginator.total_pages > 1 %}
