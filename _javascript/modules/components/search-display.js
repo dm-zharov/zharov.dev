@@ -5,6 +5,8 @@ const $btnSearchTrigger = $('#search-trigger');
 const $btnCancel = $('#search-cancel');
 const $content = $('#main-wrapper>.container>.row');
 const $topbarTitle = $('#topbar-title');
+const $topbarToolbar = $('#topbar-toolbar');
+const $topbarNavigation = $('#topbar-navigation');
 const $search = $('search');
 const $resultWrapper = $('#search-result-wrapper');
 const $results = $('#search-results');
@@ -32,10 +34,12 @@ class ScrollBlocker {
   }
 }
 
-/*--- Actions in mobile screens (Sidebar hidden) ---*/
+/*--- Actions in mobile screens ---*/
 class MobileSearchBar {
   static on() {
     $topbarTitle.addClass(C_UNLOADED);
+    $topbarToolbar.addClass(C_UNLOADED);
+    $topbarNavigation.addClass(C_UNLOADED);
     $btnSearchTrigger.addClass(C_UNLOADED);
     $search.addClass(C_FLEX);
     $btnCancel.addClass(C_LOADED);
@@ -44,8 +48,10 @@ class MobileSearchBar {
   static off() {
     $btnCancel.removeClass(C_LOADED);
     $search.removeClass(C_FLEX);
-    $topbarTitle.removeClass(C_UNLOADED);
     $btnSearchTrigger.removeClass(C_UNLOADED);
+    $topbarNavigation.removeClass(C_UNLOADED);
+    $topbarToolbar.removeClass(C_UNLOADED);
+    $topbarTitle.removeClass(C_UNLOADED);
   }
 }
 

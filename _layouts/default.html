@@ -18,11 +18,11 @@ layout: compress
 
   <body>
     <div id="main-wrapper" class="d-flex justify-content-center">
-      <div class="container d-flex flex-column">
+      <div class="container d-flex flex-column px-md-4">
         {% include topbar.html lang=lang %}
 
         {% unless layout.head_includes == empty %}
-        <div class="row mt-4">
+        <div class="row flex-grow-1 mt-4">
           <!-- head -->
           {% for _include in layout.head_includes %}
             {% assign _include_path = _include | append: '.html' %}
@@ -41,6 +41,7 @@ layout: compress
           </main>
 
           <!-- panel -->
+          {% if layout.panel_includes %}
           <aside aria-label="Panel" id="panel-wrapper" class="col-lg-3 ps-2 mb-5 text-muted">
             <div class="access">
               {% include_cached update-list.html lang=lang %}
@@ -52,6 +53,7 @@ layout: compress
               {% include {{ _include_path }} lang=lang %}
             {% endfor %}
           </aside>
+          {% endif %}
         </div>
 
         <div class="row">

@@ -57,6 +57,9 @@
     --tertiary-background: color(display-p3 0.94902 0.94902 0.968627);
   }
 
+  /* Background */
+  --background-image: radial-gradient(ellipse 80% 80% at 50% -20%,var(--secondary-background), var(--background));
+
   /* Accent */
   --sponsor: rgb(248, 124, 86);
   --sponsor-background: rgba(var(--sponsor), 0.5);

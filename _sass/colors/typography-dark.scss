@@ -56,6 +56,9 @@
     --secondary-background: color(display-p3 0.1412 0.1412 0.149);
   }
 
+  /* Background */
+  --background-image: radial-gradient(ellipse 80% 80% at 50% -20%,var(--secondary-background), var(--background));
+
   /* Sponsor */
   --sponsor: rgb(248, 124, 86);
   --sponsor-background: rgba(var(--sponsor), 0.5);

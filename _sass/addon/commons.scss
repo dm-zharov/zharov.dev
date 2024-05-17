@@ -28,7 +28,7 @@ html {
 
 body {
   background: var(--background);
-  background-image: radial-gradient(ellipse 80% 80% at 50% -20%,var(--secondary-background), var(--background));
+  background-image: var(--background-image);
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
   color: var(--text);
@@ -167,8 +167,8 @@ i {
 
 .access {
   top: 0rem;
-  transition: top 0.2s ease-in-out;
-  margin-top: 4rem;
+  transition: top 0.2s;
+  margin-top: 0rem;
   margin-bottom: 4rem;
 
   &:only-child {
@@ -785,7 +785,6 @@ $btn-mb: 0.5rem;
   a {
     @extend %button;
     @extend %sidebar-link-hover;
-    @extend %clickable-transition;
 
     &:not(:last-child) {
       margin-right: $sb-btn-gap;
@@ -855,14 +854,13 @@ $btn-mb: 0.5rem;
     color: #999999;
   }
 
-  #site-title {
+  #topbar-title {
     font-family: inherit;
     font-weight: 600;
     font-size: 1.75rem;
     letter-spacing: 0.25px;
 
     a {
-      @extend %clickable-transition;
       @extend %sidebar-link-hover;
 
       color: var(--site-title-color);
@@ -945,8 +943,9 @@ $btn-mb: 0.5rem;
 
 search {
   display: flex;
+  height: 2rem;
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   border: 1px solid var(--opaque-separator);
   background: var(--background);
   padding: 0 0.5rem;
