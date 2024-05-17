@@ -36,7 +36,7 @@ layout: compress
             {% assign main_body_col = '9' %}
           {% endif %}
 
-          <main aria-label="Main Content" class="col-{{ main_body_col }}">
+          <main aria-label="Main Content" class="col-12 col-lg-{{ main_body_col }}">
             {% if layout.refactor or layout.layout == 'default' %}
               {% include refactor-content.html content=content lang=lang %}
             {% else %}
