@@ -7,7 +7,7 @@ layout:
   category: Category
   tag: Tag
 
-# The tabs of sidebar
+# The tabs
 tabs:
   # format: <filename_without_extension>: <value>
   home: Home
@@ -21,7 +21,7 @@ home:
   latest: Recently Published
   frameworks: Frameworks
 
-# the text displayed in the search bar & search results
+# The text displayed in the search bar & search results
 search:
   hint: search
   cancel: Cancel

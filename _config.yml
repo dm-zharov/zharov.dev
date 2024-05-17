@@ -55,8 +55,7 @@ goatcounter:
 # Prefer color scheme setting.
 #
 # Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
+# and there will be a toggle to switch the theme between dark and light.
 #
 # Available options:
 #
@@ -72,7 +71,7 @@ theme_mode: # [light | dark]
 # e.g. 'https://cdn.com'
 img_cdn: "https://chirpy-img.netlify.app"
 
-# the avatar on sidebar, support local or CORS resources
+# the author avatar, support local or CORS resources
 avatar: "/commons/avatar.jpg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
