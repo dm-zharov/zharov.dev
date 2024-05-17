@@ -248,7 +248,7 @@ h1 + .post-meta {
       text-overflow: ellipsis;
 
       &:hover {
-        color: var(--toc-highlight);
+        color: var(--link);
         text-decoration: none;
       }
 
@@ -258,7 +258,7 @@ h1 + .post-meta {
     }
 
     .is-active-link {
-      color: var(--toc-highlight) !important;
+      color: var(--link) !important;
       font-weight: 600;
 
       &::before {
@@ -266,7 +266,7 @@ h1 + .post-meta {
         width: 1px;
         left: -1px;
         height: 1.25rem;
-        background-color: var(--toc-highlight) !important;
+        background-color: var(--link) !important;
       }
     }
 

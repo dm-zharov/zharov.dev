@@ -7,7 +7,7 @@ layout:
   category: Категория
   tag: Тег
 
-# The tabs of sidebar
+# The tabså
 tabs:
   # format: <filename_without_extension>: <value>
   home: Главная

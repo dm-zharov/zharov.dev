@@ -4,31 +4,36 @@
 
 @mixin dark-scheme {
   --red: rgb(255, 69, 58);
-  --orange: rgb(255, 128, 0);
+  --orange: rgb(255, 159, 10);
   --yellow: rgb(255, 214, 10);
   --green: rgb(48, 209, 88);
-  --teal: rgb(100, 210, 255);
+  --mint: rgb(99, 230, 226);
+  --teal: rgb(64, 200, 224);
   --blue: rgb(10, 132, 255);
   --indigo: rgb(94, 92, 230);
   --purple: rgb(191, 90, 242);
   --pink: rgb(255, 55, 95);
+
   --gray: rgb(142, 142, 147);
   --gray2: rgb(99, 99, 102);
   --gray3: rgb(72, 72, 74);
   --gray4: rgb(58, 58, 60);
   --gray5: rgb(44, 44, 46);
   --gray6: rgb(28, 28, 30);
+
   --text: rgb(255, 255, 255);
-  --secondary-text: rgb(134, 134, 139);
-  --tertiary-text: #aeaeae;
-  --placeholder-text: rgb(235, 235, 245);
+  --secondary-text: rgba(235, 235, 245, 0.6);
+  --tertiary-text: rgba(235, 235, 245, 0.298);
+  --placeholder-text: var(--tertiary-text);
   --link: var(--blue);
-  --separator: rgb(84, 84, 88);
+  --separator: rgba(84, 84, 88, 0.6);
   --opaque-separator: rgb(56, 56, 58);
-  --fill: rgb(120, 120, 128);
-  --secondary-fill: rgb(120, 120, 128);
+  --fill: rgba(120, 120, 128, 0.36);
+  --secondary-fill: rgba(120, 120, 128, 0.32);
+  --tertiary-fill: rgba(118, 118, 128, 0.24);
   --background: rgb(14, 14, 15);
   --secondary-background: rgb(28, 28, 30);
+  --tertiary-background: rgb(44, 44, 46);
 
   @supports (color: color(display-p3 1 1 1)) {
     --red: color(display-p3 1 0.4118 0.3804);
@@ -40,20 +45,6 @@
     --indigo: color(display-p3 0.4902 0.4784 1);
     --purple: color(display-p3 0.8549 0.5608 1);
     --pink: color(display-p3 1 0.3922 0.5098);
-    --gray: color(display-p3 0.6824 0.6824 0.698);
-    --gray2: color(display-p3 0.4863 0.4863 0.502);
-    --gray3: color(display-p3 0.3294 0.3294 0.3373);
-    --gray4: color(display-p3 0.2667 0.2667 0.2745);
-    --gray5: color(display-p3 0.2118 0.2118 0.2196);
-    --gray6: color(display-p3 0.1412 0.1412 0.149);
-    --text: color(display-p3 1 1 1);
-    --placeholder-text: color(display-p3 0.9216 0.9216 0.9608);
-    --separator: color(display-p3 0.3294 0.3294 0.3451);
-    --opaque-separator: color(display-p3 0.2196 0.2196 0.2275);
-    --fill: color(display-p3 0.4706 0.4706 0.502);
-    --secondary-fill: color(display-p3 0.4706 0.4706 0.502);
-    --background: color(display-p3 0.0706 0.0706 0.075);
-    --secondary-background: color(display-p3 0.1412 0.1412 0.149);
   }
 
   /* Background */
@@ -94,7 +85,6 @@
   --btn-paginator-hover-color: #2e2e2e;
 
   /* Posts */
-  --toc-highlight: var(--link);
   --tag-hover: rgb(43, 56, 62);
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
@@ -125,7 +115,7 @@
   --categories-hover-bg: rgb(73, 75, 76);
   --categories-icon-hover-color: white;
 
-  /* archives */
+  /* Archives */
   --timeline-color: var(--opaque-separator);
 
   .light {

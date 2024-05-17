@@ -12,23 +12,27 @@
   --indigo: rgb(88, 86, 214);
   --purple: rgb(175, 82, 222);
   --pink: rgb(255, 45, 85);
+
   --gray: rgb(142, 142, 147);
   --gray2: rgb(174, 174, 178);
   --gray3: rgb(199, 199, 204);
   --gray4: rgb(209, 209, 214);
   --gray5: rgb(229, 229, 234);
   --gray6: rgb(242, 242, 247);
+
   --text: rgb(0, 0, 0);
-  --secondary-text: rgb(110, 110, 115);
-  --tertiary-text: inherit;
+  --secondary-text: rgba(60, 60, 67, 0.6);
+  --tertiary-text: rgba(60, 60, 67, 0.298);
   --placeholder-text: rgb(60, 60, 67);
   --link: var(--blue);
-  --separator: rgb(60, 60, 67);
+  --separator: rgba(60, 60, 67, 0.29);
   --opaque-separator: rgb(198, 198, 200);
-  --fill: rgb(120, 120, 128);
-  --secondary-fill: rgb(120, 120, 128);
-  --background: rgb(247, 247, 247);
+  --fill: rgba(120, 120, 128, 0.2);
+  --secondary-fill: rgba(120, 120, 128, 0.16);
+  --tertiary-fill: rgba(118, 118, 128, 0.12);
+  --background: rgb(242, 242, 247);
   --secondary-background: rgb(255, 255, 255);
+  --tertiary-background: rgb(242, 242, 247);
 
   @supports (color: color(display-p3 1 1 1)) {
     --red: color(display-p3 1 0.2314 0.1882);
@@ -40,21 +44,6 @@
     --indigo: color(display-p3 0.3451 0.3373 0.8392);
     --purple: color(display-p3 0.6863 0.3216 0.8706);
     --pink: color(display-p3 1 0.1765 0.3333);
-    --gray: color(display-p3 0.5569 0.5569 0.5765);
-    --gray2: color(display-p3 0.6824 0.6824 0.698);
-    --gray3: color(display-p3 0.7804 0.7804 0.8);
-    --gray4: color(display-p3 0.8196 0.8196 0.8392);
-    --gray5: color(display-p3 0.898 0.898 0.9176);
-    --gray6: color(display-p3 0.949 0.949 0.9686);
-    --text: color(display-p3 0 0 0);
-    --placeholder-text: color(display-p3 0.2353 0.2353 0.2627);
-    --separator: color(display-p3 0.2353 0.2353 0.2627);
-    --opaque-separator: color(display-p3 0.7765 0.7765 0.7843);
-    --fill: color(display-p3 0.4706 0.4706 0.502);
-    --secondary-fill: color(display-p3 0.4706 0.4706 0.502);
-    --background: color(display-p3 0.94902 0.94902 0.968627);
-    --secondary-background: color(display-p3 1 1 1);
-    --tertiary-background: color(display-p3 0.94902 0.94902 0.968627);
   }
 
   /* Background */
@@ -97,7 +86,6 @@
   --btn-paginator-hover-color: #c2c6cc;
 
   /* Posts */
-  --toc-highlight: var(--link);
   --btn-share-color: gray;
   --btn-share-hover-color: #0d6efd;
   --card-hovor-bg: #e2e2e2;
@@ -135,6 +123,6 @@
   --categories-hover-bg: var(--btn-border-color);
   --categories-icon-hover-color: darkslategray;
 
-  /* Archive */
+  /* Archives */
   --timeline-color: var(--fill);
 }
