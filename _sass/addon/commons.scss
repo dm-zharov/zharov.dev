@@ -28,7 +28,6 @@ html {
 
 body {
   background: var(--background);
-  background-image: var(--background-image);
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
   color: var(--text);
@@ -420,6 +419,12 @@ main {
   line-height: 1.75;
 
   h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h4 {
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
 
@@ -818,8 +823,6 @@ $btn-mb: 0.5rem;
 /* --- top-bar --- */
 
 #topbar {
-  margin-top: 1.5rem;
-
   button i {
     color: #999999;
   }
@@ -1020,15 +1023,27 @@ search {
 
 /* --- basic wrappers --- */
 
+#top-wrapper {
+  position: relative;
+  background: var(--accent);
+
+  @include pt-pb(1.5rem);
+  @include pl-pr(0);
+
+  > .container {
+    @include pl-pr(1rem);
+  }
+}
+
 #main-wrapper {
   position: relative;
 
   @include pl-pr(0);
 
   > .container {
-    min-height: 100vh;
-
     @include pl-pr(1rem);
+
+    min-height: 100vh;
   }
 }
 
@@ -1183,10 +1198,6 @@ search {
     display: none;
   }
 
-  #topbar-wrapper {
-    @include slide(top 0.2s ease);
-  }
-
   main,
   #panel-wrapper {
     margin-top: 0;
@@ -1221,6 +1232,7 @@ search {
     justify-content: start !important;
   }
 
+  #top-wrapper > .container,
   #main-wrapper > .container {
     max-width: $main-content-max-width;
   }

@@ -17,18 +17,25 @@ layout: compress
   {% include head.html %}
 
   <body>
-    <div id="main-wrapper" class="d-flex justify-content-center">
-      <div class="container d-flex flex-column px-md-4">
+    <!-- top -->
+    <div id="top-wrapper">
+      <div class="container">
+        <!-- topbar -->
         {% include topbar.html lang=lang %}
 
+        {% if layout.head_includes %}
         <div class="row mt-4">
-          <!-- head -->
+          <!-- container -->
           {% for _include in layout.head_includes %}
             {% assign _include_path = _include | append: '.html' %}
             {% include {{ _include_path }} lang=lang %}
           {% endfor %}
         </div>
-
+        {% endif %}
+      </div>
+    </div>
+    <div id="main-wrapper">
+      <div class="container d-flex flex-column px-md-4">
         <div class="row flex-grow-1">
           {% assign main_body_col = '12' %}
 
