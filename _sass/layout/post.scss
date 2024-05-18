@@ -54,7 +54,7 @@ h1 + .post-meta {
   } /* .license-wrapper */
 
   .post-meta a:not(:hover) {
-    @extend %link-underline;
+    text-decoration-line: underline;
   }
 
   .share-wrapper {
@@ -120,7 +120,7 @@ h1 + .post-meta {
     &:hover {
       @extend %link-hover;
       @extend %tag-hover;
-      @extend %no-bottom-border;
+      @extend %no-underline;
     }
   }
 }
@@ -130,7 +130,7 @@ h1 + .post-meta {
     @extend %btn-post-nav;
 
     &:not(:hover) {
-      color: var(--link);
+      color: var(--secondary-accent);
     }
 
     &:hover {
@@ -248,7 +248,7 @@ h1 + .post-meta {
       text-overflow: ellipsis;
 
       &:hover {
-        color: var(--link);
+        color: var(--secondary-accent);
         text-decoration: none;
       }
 
@@ -258,7 +258,7 @@ h1 + .post-meta {
     }
 
     .is-active-link {
-      color: var(--link) !important;
+      color: var(--secondary-accent) !important;
       font-weight: 600;
 
       &::before {
@@ -266,7 +266,7 @@ h1 + .post-meta {
         width: 1px;
         left: -1px;
         height: 1.25rem;
-        background-color: var(--link) !important;
+        background-color: var(--secondary-accent) !important;
       }
     }
 

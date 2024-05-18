@@ -28,7 +28,7 @@
 
     /* post's title */
     > a {
-      @extend %no-bottom-border;
+      @extend %no-underline;
 
       font-size: 1.1rem;
     }

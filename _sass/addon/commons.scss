@@ -217,7 +217,7 @@ i {
       @extend %link-hover;
     }
 
-    @extend %no-bottom-border;
+    @extend %no-underline;
 
     color: inherit;
   }
@@ -369,7 +369,7 @@ sup {
   @extend %rounded;
 
   border: 0;
-  color: var(--link);
+  color: var(--secondary-accent);
   background: var(--secondary-background);
 
   &::before {
@@ -435,7 +435,7 @@ main {
   #tags,
   #archives {
     a:not(:hover) {
-      @extend %no-bottom-border;
+      @extend %no-underline;
     }
   }
 }
@@ -988,7 +988,7 @@ search {
     }
 
     @extend %link-color;
-    @extend %no-bottom-border;
+    @extend %no-underline;
     @extend %heading;
 
     font-size: 1.4rem;
