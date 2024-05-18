@@ -25,7 +25,7 @@
   --secondary-text: rgba(235, 235, 245, 0.6);
   --tertiary-text: rgba(235, 235, 245, 0.298);
   --placeholder-text: var(--tertiary-text);
-  --link: var(--blue);
+  --link: #CE8456;
   --separator: rgba(84, 84, 88, 0.6);
   --opaque-separator: rgb(56, 56, 58);
   --fill: rgba(120, 120, 128, 0.36);
@@ -47,8 +47,9 @@
     --pink: color(display-p3 1 0.3922 0.5098);
   }
 
-  /* Background */
-  --background-image: radial-gradient(ellipse 80% 80% at 50% -20%, #1d1f27, var(--background));
+  /* Branding */
+  --accent: #4c318a;
+  --secondary-accent: #a586e2;
 
   /* Sponsor */
   --sponsor: rgb(248, 124, 86);
