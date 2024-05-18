@@ -167,7 +167,7 @@ i {
 .access {
   top: 0rem;
   transition: top 0.2s;
-  margin-top: 0rem;
+  margin-top: 2rem;
   margin-bottom: 4rem;
 
   &:only-child {
@@ -337,8 +337,8 @@ sup {
   @extend %rounded;
 
   text-align: center;
-  border: 1px solid var(--sponsor);
-  color: var(--text);
+  border: 2px solid var(--sponsor);
+  color: white;
   background: none;
 
   img {
@@ -354,12 +354,12 @@ sup {
     height: 100%;
     position: absolute;
     background-color: var(--sponsor);
-    opacity: 0.1;
+    opacity: 0.0;
   }
 
   &:hover {
     &::before {
-      color: var(--text);
+      color: white;
       opacity: 0.3;
     }
   }
@@ -419,12 +419,7 @@ main {
   line-height: 1.75;
 
   h1 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  h4 {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 1.5rem;
   }
 
@@ -824,7 +819,7 @@ $btn-mb: 0.5rem;
 
 #topbar {
   button i {
-    color: #999999;
+    color: white;
   }
 
   #topbar-title {
@@ -848,7 +843,9 @@ $btn-mb: 0.5rem;
 
       a.nav-link {
         padding: 0;
-        color: var(--link);
+        color: rgba(white, 0.6);
+        font-size: 90%; 
+        letter-spacing: 0.65px;
         font-weight: 600;
         transition: none;
 
@@ -921,13 +918,14 @@ search {
   height: 2rem;
   width: 100%;
   border-radius: 1rem;
-  border: 1px solid var(--opaque-separator);
+  border: 1px solid var(--secondary-background);
+  background: var(--secondary-background);
   padding: 0 0.5rem;
 
   i {
     z-index: 2;
     font-size: 0.9rem;
-    color: var(--search-icon-color);
+    color: white;
   }
 }
 
@@ -949,7 +947,7 @@ search {
   border: 0;
   border-radius: 0;
   padding: 0.18rem 0.3rem;
-  color: var(--text);
+  color: white;
   height: auto;
 
   &:focus {
@@ -1153,6 +1151,7 @@ search {
     @extend %full-width;
   }
 
+  #top-wrapper > .container,
   #main-wrapper > .container {
     @extend %full-width;
   }
@@ -1185,7 +1184,7 @@ search {
     @include slide;
   }
 
-  #topbar,
+  #top-wrapper > .container,
   #main-wrapper > .container {
     max-width: 100%;
   }
@@ -1252,10 +1251,6 @@ search {
 @media all and (max-width: 991px) {
   #panel-wrapper {
     display: none;
-  }
-
-  #main-wrapper > .container > div.row {
-    justify-content: center !important;
   }
 }
 

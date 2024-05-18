@@ -24,7 +24,7 @@
   --secondary-text: rgba(60, 60, 67, 0.6);
   --tertiary-text: rgba(60, 60, 67, 0.298);
   --placeholder-text: rgb(60, 60, 67);
-  --link: var(--blue);
+  --link: #c97d3b;
   --separator: rgba(60, 60, 67, 0.29);
   --opaque-separator: rgb(198, 198, 200);
   --fill: rgba(120, 120, 128, 0.2);
@@ -48,6 +48,7 @@
 
   /* Branding */
   --accent: #61368f;
+  --secondary-accent: #a586e2;
 
   /* Sponsor */
   --sponsor: rgb(248, 124, 86);
@@ -78,7 +79,6 @@
   --avatar-border-color: white;
 
   /* Topbar */
-  --search-icon-color: #c2c6cc;
   --input-focus-border-color: #b8b8b8;
 
   /* Home page */
