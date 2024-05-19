@@ -45,7 +45,7 @@
 
 %tag-hover {
   background: var(--tag-hover);
-  transition: background 0.3s ease-in-out;
+  transition: background 0.3s;
 }
 
 %table-cell {
@@ -55,7 +55,6 @@
 }
 
 %link-hover {
-  color: var(--secondary-accent) !important;
   text-decoration-line: underline;
 }
 

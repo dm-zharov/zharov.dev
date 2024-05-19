@@ -4,8 +4,8 @@
 
 @mixin light-syntax {
   /* --- custom light colors --- */
-  --language-border-color: white;
-  --highlight-bg-color: white;
+  --language-border-color: var(--secondary-background);
+  --highlight-bg-color: var(--secondary-background);
   --highlighter-rouge-color: #3f596f;
   --highlight-lineno-color: #9e9e9e;
   --code-color: var(--text);

@@ -100,6 +100,8 @@ code {
   -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  font-family: $font-family;
+  font-size: $code-font-size;
   color: var(--code-color);
 
   &.highlighter-rouge {
