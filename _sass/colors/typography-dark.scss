@@ -80,7 +80,7 @@
   --input-focus-border-color: rgb(112, 114, 115);
 
   /* Posts */
-  --tag-hover: rgb(43, 56, 62);
+  --tag-hover: var(--tertiary-background);
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
@@ -100,7 +100,7 @@
   --prompt-danger-icon-color: #cd0202;
 
   /* tags */
-  --tag-border: var(--gray5);
+  --tag-border: var(--opaque-separator);
   --dash-color: rgb(63, 65, 68);
   --search-tag-bg: #292828;
 

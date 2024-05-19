@@ -51,7 +51,7 @@
 
   /* Branding */
   --accent: #61368f;
-  --secondary-accent: #a586e2;
+  --secondary-accent: var(--accent);
 
   /* Sponsor */
   --sponsor: rgb(248, 124, 86);
@@ -100,7 +100,7 @@
   --prompt-danger-icon-color: #df3c30;
 
   /* Tags */
-  --tag-border: --tag-border: var(--gray5);
+  --tag-border: var(--opaque-separator);
   --tag-hover: rgb(222, 226, 230);
   --search-tag-bg: #f8f9fa;
 
