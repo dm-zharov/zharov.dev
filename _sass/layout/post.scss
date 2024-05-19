@@ -175,7 +175,18 @@ h1 + .post-meta {
     margin-top: 0.3rem;
     white-space: normal;
   }
-} /* .post-navigation */
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--secondary-accent);
+  --bs-btn-border-color: var(--secondary-accent);
+  --bs-btn-hover-bg: var(--secondary-accent);
+  --bs-btn-hover-border-color: var(--secondary-accent);
+  --bs-btn-active-bg: var(--secondary-accent);
+  --bs-btn-active-border-color: var(--secondary-accent);
+  --bs-btn-disabled-color: var(--secondary-accent);
+  --bs-btn-disabled-border-color: var(--secondary-accent);
+}
 
 @media (hover: hover) {
   .post-navigation {

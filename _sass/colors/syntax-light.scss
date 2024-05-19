@@ -4,11 +4,11 @@
 
 @mixin light-syntax {
   /* --- custom light colors --- */
-  --language-border-color: #ececec;
-  --highlight-bg-color: #f6f8fa;
+  --language-border-color: white;
+  --highlight-bg-color: white;
   --highlighter-rouge-color: #3f596f;
   --highlight-lineno-color: #9e9e9e;
-  --code-color: #3a3a3a;
+  --code-color: var(--text);
   --code-header-text-color: #a3a3a3;
   --code-header-muted-color: #e5e5e5;
   --code-header-icon-color: #c9c8c8;
@@ -31,7 +31,7 @@
   .highlight,
   .highlight .w {
     color: #24292f;
-    background-color: #f6f8fa;
+    background-color: var(--highlight-bg-color);
   }
 
   .highlight .k,
@@ -55,7 +55,7 @@
   }
 
   .highlight .gr {
-    color: #f6f8fa;
+    color: var(--highlight-bg-color);
   }
 
   .highlight .gd {
@@ -175,7 +175,7 @@
   }
 
   .highlight .err {
-    color: #f6f8fa;
+    color: var(--highlight-bg-color);
     background-color: #82071e;
   }
 

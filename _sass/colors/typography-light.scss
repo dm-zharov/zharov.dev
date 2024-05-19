@@ -21,7 +21,7 @@
   --gray6: rgb(242, 242, 247);
 
   --text: rgb(0, 0, 0);
-  --secondary-text: rgba(60, 60, 67, 0.6);
+  --secondary-text: rgba(108, 117, 125);
   --tertiary-text: rgba(60, 60, 67, 0.298);
   --placeholder-text: rgb(60, 60, 67);
   --link: #c97d3b;
@@ -33,6 +33,9 @@
   --background: rgb(242, 242, 247);
   --secondary-background: rgb(255, 255, 255);
   --tertiary-background: rgb(242, 242, 247);
+
+  --light-text: white;
+  --dark-text: black;
 
   @supports (color: color(display-p3 1 1 1)) {
     --red: color(display-p3 1 0.2314 0.1882);
@@ -57,10 +60,6 @@
   /* Common color */
   --blockquote-border-color: #eeeeee;
   --button-bg: #ffffff;
-  --btn-border-color: #e9ecef;
-  --btn-backtotop-color: #686868;
-  --btn-backtotop-border-color: #f1f1f1;
-  --btn-box-shadow: #eaeaea;
   --checkbox-color: #c5c5c5;
   --checkbox-checked-color: #07a8f7;
   --img-bg: radial-gradient(
@@ -81,13 +80,7 @@
   /* Topbar */
   --input-focus-border-color: #b8b8b8;
 
-  /* Home page */
-  --btn-patinator-text-color: #555555;
-  --btn-paginator-hover-color: #c2c6cc;
-
   /* Posts */
-  --btn-share-color: gray;
-  --btn-share-hover-color: #0d6efd;
   --card-hovor-bg: #e2e2e2;
   --footnote-target-bg: lightcyan;
   --tb-odd-bg: #fbfcfd;
@@ -110,6 +103,18 @@
   --tag-border: --tag-border: var(--gray5);
   --tag-hover: rgb(222, 226, 230);
   --search-tag-bg: #f8f9fa;
+
+  /* Bootstrap */
+  --btn-patinator-text-color: #555555;
+  --btn-paginator-hover-color: #c2c6cc;
+
+  --btn-share-color: gray;
+  --btn-share-hover-color: #0d6efd;
+
+  --btn-border-color: var(--opaque-separator);
+  --btn-backtotop-color: var(--text);
+  --btn-backtotop-border-color: var(--opaque-separator);
+  --btn-box-shadow: var(--background);
 
   [class^='prompt-'] {
     --link-underline-color: rgb(219, 216, 216);

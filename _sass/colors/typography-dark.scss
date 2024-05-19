@@ -21,7 +21,7 @@
   --gray5: rgb(44, 44, 46);
   --gray6: rgb(28, 28, 30);
 
-  --text: rgb(255, 255, 255);
+  --text: rgb(235, 235, 235);
   --secondary-text: rgba(235, 235, 245, 0.6);
   --tertiary-text: rgba(235, 235, 245, 0.298);
   --placeholder-text: var(--tertiary-text);
@@ -34,6 +34,9 @@
   --background: rgb(14, 14, 15);
   --secondary-background: rgb(28, 28, 30);
   --tertiary-background: rgb(44, 44, 46);
+
+  --light-text: white;
+  --dark-text: black;
 
   @supports (color: color(display-p3 1 1 1)) {
     --red: color(display-p3 1 0.4118 0.3804);
@@ -59,10 +62,6 @@
 
   --blockquote-border-color: rgb(66, 66, 66);
   --button-bg: #1e1e1e;
-  --btn-border-color: #2e2f31;
-  --btn-backtotop-color: var(--text);
-  --btn-backtotop-border-color: #212122;
-  --btn-box-shadow: var(--background);
   --card-header-bg: #292929;
   --checkbox-color: rgb(118, 120, 121);
   --checkbox-checked-color: var(--link);
@@ -80,18 +79,12 @@
   /* Topbar */
   --input-focus-border-color: rgb(112, 114, 115);
 
-  /* Home page */
-  --btn-patinator-text-color: var(--text);
-  --btn-paginator-hover-color: #2e2e2e;
-
   /* Posts */
   --tag-hover: rgb(43, 56, 62);
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
   --footnote-target-bg: rgb(63, 81, 181);
-  --btn-share-color: #6c757d;
-  --btn-share-hover-color: #bfc1ca;
   --card-hovor-bg: rgb(72, 72, 74);
   --kbd-wrap-color: #6a6a6a;
   --kbd-text-color: #d3d3d3;
@@ -117,6 +110,17 @@
 
   /* Archives */
   --timeline-color: var(--opaque-separator);
+
+  /* Bootstrap */
+  --btn-patinator-text-color: var(--text);
+  --btn-paginator-hover-color: #2e2e2e;
+
+  --btn-share-color: #6c757d;
+  --btn-share-hover-color: #bfc1ca;
+  --btn-border-color: var(--opaque-separator);
+  --btn-backtotop-color: var(--text);
+  --btn-backtotop-border-color: var(--opaque-separator);
+  --btn-box-shadow: var(--background);
 
   .light {
     display: none;
